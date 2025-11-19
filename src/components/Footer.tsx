@@ -11,10 +11,6 @@ const Footer = () => {
             NanoClean • {t('نانوكلين', 'نانوكلين')}
           </p>
           <p className="text-foreground/40 text-xs">
-            {t(
-              'عرض تجريبي للبوث – مرحلة البحث والتطوير المبكرة',
-              'Concept demo for booth display – Early R&D Stage'
-            )}
           </p>
         </div>
       </div>
