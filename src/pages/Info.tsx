@@ -2,6 +2,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { FileText, Leaf, Form, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import LanguageToggle from '@/components/LanguageToggle';
 
 const Info = () => {
   const { t } = useLanguage();
@@ -66,9 +67,14 @@ const Info = () => {
           <a href="/" className="text-xl font-bold gradient-text">
             {t('NanoClean', 'NanoClean')}
           </a>
-          <a href="/" className="text-sm text-foreground/70 hover:text-primary transition-colors">
-            {t('← العودة إلى الرئيسية', '← Back to Home')}
-          </a>
+          <div className="flex items-center gap-6">
+            <div>
+              <LanguageToggle />
+            </div>
+            <a href="/" className="text-sm text-foreground/70 hover:text-primary transition-colors">
+              {t('← العودة إلى الرئيسية', '← Back to Home')}
+            </a>
+          </div>
         </div>
       </div>
 
