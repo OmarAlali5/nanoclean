@@ -56,13 +56,13 @@ const Features = () => {
             return (
               <div
                 key={index}
-                className="group glass-card p-8 rounded-2xl hover:neon-glow transition-all duration-500 hover:scale-105 animate-fade-in"
+                className="group glass-card p-8 rounded-2xl border border-border-glow/30 hover:border-primary/40 hover:neon-glow transition-all duration-500 hover:scale-105 animate-fade-in h-full flex flex-col"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 {/* Icon Container */}
-                <div className="relative mb-6">
-                  <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-20 blur-xl group-hover:opacity-40 transition-opacity duration-500`} />
-                  <div className={`relative w-16 h-16 rounded-2xl bg-gradient-to-br ${feature.gradient} p-0.5`}>
+                <div className="relative mb-6 flex justify-center">
+                  <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-20 blur-xl group-hover:opacity-40 transition-opacity duration-500 w-16 h-16`} />
+                  <div className={`relative w-16 h-16 rounded-2xl bg-gradient-to-br ${feature.gradient} p-0.5 flex items-center justify-center`}>
                     <div className="w-full h-full bg-background-secondary rounded-2xl flex items-center justify-center">
                       <Icon className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300" />
                     </div>
@@ -70,15 +70,15 @@ const Features = () => {
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors duration-300 text-center">
                   {feature.title}
                 </h3>
-                <p className="text-foreground/70 leading-relaxed">
+                <p className="text-foreground/70 leading-relaxed text-center flex-grow">
                   {feature.description}
                 </p>
 
                 {/* Bottom Accent Line */}
-                <div className={`mt-6 h-1 w-0 group-hover:w-full bg-gradient-to-r ${feature.gradient} rounded-full transition-all duration-500`} />
+                <div className={`mt-6 h-1 w-0 group-hover:w-full bg-gradient-to-r ${feature.gradient} rounded-full transition-all duration-500 mx-auto`} />
               </div>
             );
           })}
