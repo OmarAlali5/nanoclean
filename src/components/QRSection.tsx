@@ -47,18 +47,18 @@ const QRSection = () => {
         </div>
 
         {/* Content Grid */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* QR Code */}
-          <div className="flex justify-center">
+          <div className="flex justify-center lg:order-1 order-first">
             <div className="relative">
-              {/* Glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 blur-3xl" />
-              
+              {/* Teal Glow effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/40 to-accent/40 blur-3xl -z-10" />
+
               {/* QR Container */}
               <div className="relative glass-card p-8 rounded-3xl neon-glow">
-                <div className="w-64 h-64 bg-white rounded-2xl flex items-center justify-center">
+                <div className="w-72 h-72 bg-white rounded-2xl flex items-center justify-center shadow-2xl">
                   <div className="text-center space-y-2">
-                    <QrCode className="w-20 h-20 mx-auto text-gray-400" />
+                    <QrCode className="w-24 h-24 mx-auto text-gray-400" />
                     <p className="text-sm font-medium text-gray-600">
                       QR Code
                       <br />
@@ -71,7 +71,7 @@ const QRSection = () => {
           </div>
 
           {/* Information */}
-          <div className="space-y-8">
+          <div className="space-y-8 lg:order-2 order-last">
             <div>
               <h3 className="text-2xl font-bold mb-6 text-foreground">
                 {t('وش يفتح الـ QR؟', 'What Does the QR Open?')}
