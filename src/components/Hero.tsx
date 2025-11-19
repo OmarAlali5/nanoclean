@@ -12,6 +12,7 @@ const Hero = () => {
       <div className="blob blob-1" />
       <div className="blob blob-2" />
       <div className="blob blob-3" />
+      <div className="absolute inset-0 bg-gradient-radial opacity-40 blur-3xl pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-center py-20">
         {/* Text Content */}
@@ -25,7 +26,7 @@ const Hero = () => {
           </div>
 
           {/* Main Title */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight tracking-tight">
             <span className="gradient-text">
               {t('نانوكلين', 'NanoClean')}
             </span>
@@ -39,7 +40,7 @@ const Hero = () => {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg sm:text-xl text-foreground/80 max-w-2xl leading-relaxed">
+          <p className="text-lg sm:text-xl text-foreground/80 max-w-2xl leading-loose">
             {t(
               'منصة متكاملة تجمع بين الحساسات النانوية والذكاء الاصطناعي والتحويل الحيوي لتحويل التسربات النفطية إلى وقود حيوي، مع مراقبة لحظية عبر لوحة تحكم سحابية.',
               'An integrated platform combining nano-sensors, AI, and bioconversion to transform oil spills into biofuel, with real-time monitoring via cloud dashboard.'
