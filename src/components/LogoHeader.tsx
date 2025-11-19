@@ -11,7 +11,7 @@ const LogoHeader = () => {
         <img
           src={logo}
           alt="NanoClean Logo"
-          className="h-16 w-auto drop-shadow-lg"
+          className="h-20 w-auto drop-shadow-lg"
         />
       </div>
     </div>
