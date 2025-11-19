@@ -1,4 +1,3 @@
-import { LanguageProvider } from '@/contexts/LanguageContext';
 import LanguageToggle from '@/components/LanguageToggle';
 import LogoHeader from '@/components/LogoHeader';
 import Hero from '@/components/Hero';
@@ -11,29 +10,27 @@ import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
-    <LanguageProvider>
-      <div className="min-h-screen bg-background">
-        {/* Logo - Fixed Position */}
-        <LogoHeader />
+    <div className="min-h-screen bg-background">
+      {/* Logo - Fixed Position */}
+      <LogoHeader />
 
-        {/* Language Toggle - Fixed Position */}
-        <div className="fixed top-4 right-6 z-40">
-          <LanguageToggle />
-        </div>
-
-        {/* Main Content */}
-        <main className="pt-16">
-          <Hero />
-          <Features />
-          <Metrics />
-          <QRSection />
-          <TargetCustomers />
-          <Contact />
-        </main>
-
-        <Footer />
+      {/* Language Toggle - Fixed Position */}
+      <div className="fixed top-4 right-6 z-40">
+        <LanguageToggle />
       </div>
-    </LanguageProvider>
+
+      {/* Main Content */}
+      <main className="pt-16">
+        <Hero />
+        <Features />
+        <Metrics />
+        <QRSection />
+        <TargetCustomers />
+        <Contact />
+      </main>
+
+      <Footer />
+    </div>
   );
 };
 
