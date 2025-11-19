@@ -26,12 +26,12 @@ const QRSection = () => {
   ];
 
   return (
-    <section ref={ref} className="relative py-24 px-4 sm:px-6 lg:px-8 blob-container">
+    <section ref={ref} className="relative py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 blob-container">
       <div className="blob blob-2" style={{ opacity: 0.1 }} />
-      
+
       <div className={`max-w-6xl mx-auto scroll-animate ${isVisible ? 'visible' : ''}`}>
         {/* Header */}
-        <div className="text-center mb-12 space-y-4">
+        <div className="text-center mb-12 sm:mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-accent/30 mb-4">
             <QrCode className="w-4 h-4 text-accent" />
             <span className="text-sm font-medium">
@@ -39,7 +39,7 @@ const QRSection = () => {
             </span>
           </div>
           
-          <h2 className="text-3xl sm:text-4xl font-bold">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">
             <span className="gradient-text">
               {t('امسح الـ QR لقراءة المزيد عن نانوكلين', 'Scan QR to Learn More About NanoClean')}
             </span>
