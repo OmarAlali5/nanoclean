@@ -24,7 +24,7 @@ const Metrics = () => {
   ];
 
   return (
-    <section ref={ref} className="relative py-16 px-4 sm:px-6 lg:px-8">
+    <section ref={ref} className="relative py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div className={`max-w-5xl mx-auto scroll-animate ${isVisible ? 'visible' : ''}`}>
         <div className="grid md:grid-cols-2 gap-6">
           {metrics.map((metric, index) => {
