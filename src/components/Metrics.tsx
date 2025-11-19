@@ -32,15 +32,15 @@ const Metrics = () => {
             return (
               <div
                 key={index}
-                className="glass-card p-6 rounded-2xl border-border-glow/30 hover:border-primary/50 hover:neon-glow transition-all duration-300"
+                className="glass-card p-5 rounded-xl border border-border-glow/20 hover:border-primary/30 transition-all duration-300"
               >
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-secondary p-0.5 flex-shrink-0">
-                    <div className="w-full h-full bg-background-secondary rounded-xl flex items-center justify-center">
-                      <Icon className="w-6 h-6 text-primary" />
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary p-0.5 flex-shrink-0">
+                    <div className="w-full h-full bg-background-secondary rounded-lg flex items-center justify-center">
+                      <Icon className="w-5 h-5 text-primary" />
                     </div>
                   </div>
-                  <p className="text-foreground font-medium leading-relaxed">
+                  <p className="text-foreground text-sm font-medium leading-relaxed">
                     {metric.text}
                   </p>
                 </div>
