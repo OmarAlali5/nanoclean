@@ -15,14 +15,14 @@ const Index = () => {
       <div className="min-h-screen bg-background">
         {/* Logo - Fixed Position */}
         <LogoHeader />
-        
+
         {/* Language Toggle - Fixed Position */}
-        <div className="fixed top-6 right-6 z-50">
+        <div className="fixed top-4 right-6 z-40">
           <LanguageToggle />
         </div>
 
         {/* Main Content */}
-        <main>
+        <main className="pt-16">
           <Hero />
           <Features />
           <Metrics />
