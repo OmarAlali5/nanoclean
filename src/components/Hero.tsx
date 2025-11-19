@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="blob blob-3" />
       <div className="absolute inset-0 bg-gradient-radial opacity-40 blur-3xl pointer-events-none" />
 
-      <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-center py-20">
+      <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center py-12 sm:py-16 lg:py-20">
         {/* Text Content */}
         <div className="text-center lg:text-start space-y-8 animate-fade-in">
           {/* Badge */}
