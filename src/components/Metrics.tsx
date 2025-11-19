@@ -10,14 +10,14 @@ const Metrics = () => {
     {
       icon: DollarSign,
       text: t(
-        'تكلفة تقديرية للوحدة: 27,000 – 63,000 ريال',
-        'Estimated Unit Cost: 27,000 – 63,000 SAR'
+        'تكلفة تقديرية للوحدة: 71,500 ريال',
+        'Estimated Unit Cost: 71,500 SAR'
       ),
     },
     {
       icon: TrendingUp,
       text: t(
-        'نماذج ربحية: بيع، تأجير، صيانة، منصة رقمية',
+        'نماذج الربحية: بيع، تأجير، صيانة، منصة رقمية',
         'Revenue Models: Sales, Rental, Maintenance, Digital Platform'
       ),
     },
