@@ -36,7 +36,7 @@ const TargetCustomers = () => {
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-3xl sm:text-4xl font-bold">
             <span className="gradient-text">
-              {t('الجهات المستهدفة مبدئيًا', 'Initial Target Customers')}
+              {t('الجهات المستهدفة', 'Initial Target Customers')}
             </span>
           </h2>
           <div className="w-24 h-1 mx-auto bg-gradient-to-r from-primary via-secondary to-accent rounded-full" />
