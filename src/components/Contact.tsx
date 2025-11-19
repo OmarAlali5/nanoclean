@@ -23,7 +23,7 @@ const Contact = () => {
       label: t('عبدالله محمد', 'Abdullah Mohammed'),
       email: 'example3@nanoclean.sa',
       phone: '0501714085',
-      linkedinUrl: https://www.linkedin.com/in/abdullahmohammedsaifali',
+      linkedinUrl: 'https://www.linkedin.com/in/abdullahmohammedsaifali',
     },
     {
       label: t('شيماء الزهراني', 'Shaymaa Alzahrani'),
