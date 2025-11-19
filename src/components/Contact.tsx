@@ -1,8 +1,10 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { Mail, Phone, Linkedin, Users } from 'lucide-react';
 
 const Contact = () => {
   const { t } = useLanguage();
+  const { ref, isVisible } = useScrollAnimation();
 
   const teamMembers = [
     {
@@ -38,10 +40,10 @@ const Contact = () => {
   ];
 
   return (
-    <section className="relative py-24 px-4 sm:px-6 lg:px-8 blob-container">
+    <section ref={ref} className="relative py-24 px-4 sm:px-6 lg:px-8 blob-container">
       <div className="blob blob-1" style={{ opacity: 0.1 }} />
       
-      <div className="max-w-7xl mx-auto">
+      <div className={`max-w-7xl mx-auto scroll-animate ${isVisible ? 'visible' : ''}`}>
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-primary/30 mb-4">

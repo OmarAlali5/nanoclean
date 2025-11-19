@@ -1,8 +1,10 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { Building2, Anchor, TreePine, Waves } from 'lucide-react';
 
 const TargetCustomers = () => {
   const { t } = useLanguage();
+  const { ref, isVisible } = useScrollAnimation();
 
   const customers = [
     {
@@ -28,8 +30,8 @@ const TargetCustomers = () => {
   ];
 
   return (
-    <section className="relative py-24 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+    <section ref={ref} className="relative py-24 px-4 sm:px-6 lg:px-8">
+      <div className={`max-w-6xl mx-auto scroll-animate ${isVisible ? 'visible' : ''}`}>
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-3xl sm:text-4xl font-bold">

@@ -1,8 +1,10 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { Waves, Zap, Sun } from 'lucide-react';
 
 const Features = () => {
   const { t } = useLanguage();
+  const { ref, isVisible } = useScrollAnimation();
 
   const features = [
     {
@@ -35,8 +37,8 @@ const Features = () => {
   ];
 
   return (
-    <section className="relative py-24 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <section ref={ref} className="relative py-24 px-4 sm:px-6 lg:px-8">
+      <div className={`max-w-7xl mx-auto scroll-animate ${isVisible ? 'visible' : ''}`}>
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
