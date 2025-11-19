@@ -2,7 +2,7 @@ import logo from '@/assets/nanoclean-logo.png';
 
 const LogoHeader = () => {
   return (
-    <div className="fixed top-6 left-6 z-50 animate-fade-in">
+    <div className="fixed top-6 left-6 z-50" style={{ pointerEvents: 'auto' }}>
       <img
         src={logo}
         alt="NanoClean Logo"
