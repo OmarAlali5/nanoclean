@@ -48,18 +48,18 @@ const Hero = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Button 
-              size="lg" 
-              className="gap-2 neon-glow bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all duration-300 text-primary-foreground font-semibold"
+          <div className="flex flex-col gap-4 w-full sm:w-auto sm:flex-row justify-center lg:justify-start">
+            <Button
+              size="lg"
+              className="gap-2 neon-glow bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all duration-300 text-primary-foreground font-semibold w-full sm:w-auto"
             >
               <Presentation className="w-5 h-5" />
               {t('عرض النموذج الأولي (Prototype)', 'View Prototype')}
             </Button>
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               variant="outline"
-              className="gap-2 glass-card border-border-glow/50 hover:border-primary hover:neon-glow transition-all duration-300"
+              className="gap-2 glass-card border-border-glow/50 hover:border-primary hover:neon-glow transition-all duration-300 w-full sm:w-auto"
             >
               <FileText className="w-5 h-5" />
               {t('ملخص تنفيذي / Pitch Deck', 'Executive Summary / Pitch Deck')}
