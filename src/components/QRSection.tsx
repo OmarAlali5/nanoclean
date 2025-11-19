@@ -1,7 +1,6 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { QrCode, FileText, Leaf, MessageSquare, Info } from 'lucide-react';
-import qrImage from '@/assets/eurgYe.png';
 
 const QRSection = () => {
   const { t } = useLanguage();
@@ -39,7 +38,7 @@ const QRSection = () => {
               {t('امسح للاستكشاف', 'Scan to Explore')}
             </span>
           </div>
-
+          
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">
             <span className="gradient-text">
               {t('امسح الـ QR لقراءة المزيد عن نانوكلين', 'Scan QR to Learn More About NanoClean')}
@@ -57,12 +56,15 @@ const QRSection = () => {
 
               {/* QR Container */}
               <div className="relative glass-card p-8 rounded-3xl neon-glow">
-                <div className="w-72 h-72 bg-white rounded-2xl flex items-center justify-center shadow-2xl overflow-hidden">
-                  <img
-                    src={qrImage}
-                    alt={t('رمز الاستجابة السريعة لمشروع نانوكلين', 'NanoClean project QR code')}
-                    className="w-full h-full object-contain"
-                  />
+                <div className="w-72 h-72 bg-white rounded-2xl flex items-center justify-center shadow-2xl">
+                  <div className="text-center space-y-2">
+                    <QrCode className="w-24 h-24 mx-auto text-gray-400" />
+                    <p className="text-sm font-medium text-gray-600">
+                      QR Code
+                      <br />
+                      Placeholder
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -74,7 +76,7 @@ const QRSection = () => {
               <h3 className="text-2xl font-bold mb-6 text-foreground">
                 {t('وش يفتح الـ QR؟', 'What Does the QR Open?')}
               </h3>
-
+              
               <div className="space-y-4">
                 {qrContent.map((item, index) => {
                   const Icon = item.icon;
