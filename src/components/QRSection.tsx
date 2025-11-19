@@ -1,8 +1,10 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { QrCode, FileText, Leaf, MessageSquare, Info } from 'lucide-react';
 
 const QRSection = () => {
   const { t } = useLanguage();
+  const { ref, isVisible } = useScrollAnimation();
 
   const qrContent = [
     {
@@ -24,10 +26,10 @@ const QRSection = () => {
   ];
 
   return (
-    <section className="relative py-24 px-4 sm:px-6 lg:px-8 blob-container">
+    <section ref={ref} className="relative py-24 px-4 sm:px-6 lg:px-8 blob-container">
       <div className="blob blob-2" style={{ opacity: 0.1 }} />
       
-      <div className="max-w-6xl mx-auto">
+      <div className={`max-w-6xl mx-auto scroll-animate ${isVisible ? 'visible' : ''}`}>
         {/* Header */}
         <div className="text-center mb-12 space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-accent/30 mb-4">

@@ -1,8 +1,10 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { DollarSign, TrendingUp } from 'lucide-react';
 
 const Metrics = () => {
   const { t } = useLanguage();
+  const { ref, isVisible } = useScrollAnimation();
 
   const metrics = [
     {
@@ -22,8 +24,8 @@ const Metrics = () => {
   ];
 
   return (
-    <section className="relative py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl mx-auto">
+    <section ref={ref} className="relative py-16 px-4 sm:px-6 lg:px-8">
+      <div className={`max-w-5xl mx-auto scroll-animate ${isVisible ? 'visible' : ''}`}>
         <div className="grid md:grid-cols-2 gap-6">
           {metrics.map((metric, index) => {
             const Icon = metric.icon;

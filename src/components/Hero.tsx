@@ -1,7 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from './ui/button';
 import { FileText, Presentation } from 'lucide-react';
-import logo from '@/assets/nanoclean-logo.png';
+import buoy from '@/assets/buoy.png';
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -80,11 +80,11 @@ const Hero = () => {
             {/* Glow Effect Background */}
             <div className="absolute inset-0 bg-gradient-radial opacity-60 blur-3xl" />
             
-            {/* Logo Container */}
-            <div className="relative glass-card p-12 rounded-3xl neon-glow animate-float">
+            {/* Buoy Container */}
+            <div className="relative glass-card p-8 rounded-3xl neon-glow animate-float">
               <img 
-                src={logo} 
-                alt="NanoClean Logo"
+                src={buoy} 
+                alt="NanoClean Smart Buoy"
                 className="w-full h-auto drop-shadow-2xl"
               />
             </div>
