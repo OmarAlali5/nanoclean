@@ -17,7 +17,7 @@ const Contact = () => {
       label: t('عبدالله مهراب', 'Abdullah Mohrab'),
       email: 'example2@nanoclean.sa',
       phone: '0540705086',
-      linkedinUrl: 'https://www.linkedin.com/in/abdallah-mohrab-63462834a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2BpxJjYg8TuKnyqZDl%2FcGug%3D%3D',
+      linkedinUrl: 'https://www.linkedin.com/in/abdallah-mohrab-63462834a',
     },
     {
       label: t('عبدالله محمد', 'Abdullah Mohammed'),
@@ -29,13 +29,13 @@ const Contact = () => {
       label: t('شيماء الزهراني', 'Shaymaa Alzahrani'),
       email: 'example4@nanoclean.sa',
       phone: '0532388066',
-      linkedinUrl: 'https://www.linkedin.com/in/shaymaa-alzahrani/',
+      linkedinUrl: 'https://www.linkedin.com/in/shaymaaalzahrani',
     },
     {
       label: t('نهال النونو', 'Nihal Alnounou'),
       email: 'example5@nanoclean.sa',
       phone: '0554461036',
-      linkedinUrl: 'https://www.linkedin.com/in/nihal-alnounou/',
+      linkedinUrl: 'https://www.linkedin.com/in/nihalt',
     },
   ];
 
