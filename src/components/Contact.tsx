@@ -11,31 +11,31 @@ const Contact = () => {
       label: t('عمر العلي', 'Omar Alali'),
       email: 'omar.alali966@gmail.com',
       phone: '0530642803',
-      linkedin: t('رابط الحساب', 'Profile Link'),
+      linkedinUrl: 'https://www.linkedin.com/in/omar-alali/',
     },
     {
       label: t('عبدالله مهراب', 'Abdullah Mohrab'),
       email: 'example2@nanoclean.sa',
       phone: '0540705086',
-      linkedin: t('رابط الحساب', 'Profile Link'),
+      linkedinUrl: 'https://www.linkedin.com/in/abdullah-mohrab/',
     },
     {
       label: t('عبدالله محمد', 'Abdullah Mohammed'),
       email: 'example3@nanoclean.sa',
       phone: '0501714085',
-      linkedin: t('رابط الحساب', 'Profile Link'),
+      linkedinUrl: 'https://www.linkedin.com/in/abdullah-mohammed/',
     },
     {
       label: t('شيماء الزهراني', 'Shaymaa Alzahrani'),
       email: 'example4@nanoclean.sa',
       phone: '0532388066',
-      linkedin: t('رابط الحساب', 'Profile Link'),
+      linkedinUrl: 'https://www.linkedin.com/in/shaymaa-alzahrani/',
     },
     {
       label: t('نهال النونو', 'Nihal Alnounou'),
       email: 'example5@nanoclean.sa',
       phone: '0554461036',
-      linkedin: t('رابط الحساب', 'Profile Link'),
+      linkedinUrl: 'https://www.linkedin.com/in/nihal-alnounou/',
     },
   ];
 
@@ -105,12 +105,19 @@ const Contact = () => {
                   <span className="text-foreground/70">{member.phone}</span>
                 </div>
                 
-                <div className="flex items-center gap-3 text-sm">
-                  <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                <a
+                  href={member.linkedinUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-sm group"
+                >
+                  <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/20 transition-colors">
                     <Linkedin className="w-4 h-4 text-accent" />
                   </div>
-                  <span className="text-foreground/70">{member.linkedin}</span>
-                </div>
+                  <span className="text-primary hover:text-primary-glow transition-colors duration-300 cursor-pointer font-medium">
+                    {t('لينكدان', 'LinkedIn')}
+                  </span>
+                </a>
               </div>
             </div>
           ))}
