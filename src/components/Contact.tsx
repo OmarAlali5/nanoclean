@@ -8,9 +8,9 @@ const Contact = () => {
 
   const teamMembers = [
     {
-      label: t('عضو 1', 'Member 1'),
-      email: 'example1@nanoclean.sa',
-      phone: '05xxxxxxxx',
+      label: t('عمر العلي', 'Omar Alali'),
+      email: 'omar.alali966@gmail.com',
+      phone: '0530642803',
       linkedin: t('رابط الحساب', 'Profile Link'),
     },
     {
