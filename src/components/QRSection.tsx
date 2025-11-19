@@ -58,12 +58,12 @@ const QRSection = () => {
               <div className="relative glass-card p-8 rounded-3xl neon-glow">
                 <div className="w-72 h-72 bg-white rounded-2xl flex items-center justify-center shadow-2xl">
                   <div className="text-center space-y-2">
-                    <QrCode className="w-24 h-24 mx-auto text-gray-400" />
-                    <p className="text-sm font-medium text-gray-600">
-                      QR Code
-                      <br />
-                      Placeholder
-                    </p>
+                    <img
+                      src="/src/assets/eurgYE.png"
+                      alt="Custom QR"
+                      className="w-full h-full object-cover rounded-2xl"
+                    />
+                
                   </div>
                 </div>
               </div>
