@@ -11,7 +11,7 @@ const Contact = () => {
       label: t('عمر العلي', 'Omar Alali'),
       email: 'omar.alali966@gmail.com',
       phone: '0530642803',
-      linkedinUrl: 'https://www.linkedin.com/in/omar-alali/',
+      linkedinUrl: 'https://www.linkedin.com/in/omar-alali-/',
     },
     {
       label: t('عبدالله مهراب', 'Abdullah Mohrab'),
