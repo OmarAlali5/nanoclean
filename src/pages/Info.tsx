@@ -1,6 +1,6 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { FileText, Leaf, Form, Zap } from 'lucide-react';
+import { FileText, Leaf, ClipboardList, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import LanguageToggle from '@/components/LanguageToggle';
 
@@ -35,7 +35,7 @@ const Info = () => {
     },
     {
       id: 'partnership',
-      icon: Form,
+      icon: ClipboardList,
       titleAr: 'نموذج اهتمام للتعاون',
       titleEn: 'Partnership Interest Form',
       descAr: 'نموذج خاص للجهات الراغبة في تجربة نانوكلين، دعم المشروع، أو فتح باب الشراكات.',
