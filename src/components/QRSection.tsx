@@ -59,8 +59,8 @@ const QRSection = () => {
                 <div className="w-72 h-72 bg-white rounded-2xl flex items-center justify-center shadow-2xl">
                   <div className="text-center space-y-2">
                     <img
-                      src="/src/assets/eurgYE.png"
-                      alt="Custom QR"
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fff6463be05f5414390b1cc7ab38298c4%2F418b62091026403eb002ad1e735a4f1d?format=webp"
+                      alt="NanoClean QR Code"
                       className="w-full h-full object-cover rounded-2xl"
                     />
                 
