@@ -42,7 +42,7 @@ const Hero = () => {
           {/* Subtitle */}
           <p className="text-lg sm:text-xl text-foreground/80 max-w-2xl leading-loose">
             {t(
-              'منصة متكامل�� تجمع بين الحساسات النانوية والذكاء الاصطناعي والتحويل الحيوي لتحويل التسربات النفطية إلى وقود حيوي، مع مراقبة لحظية عبر لوحة تحكم سحابية.',
+              'منصة متكاملة تجمع بين الحساسات النانوية والذكاء الاصطناعي والتحويل الحيوي لتحويل التسربات النفطية إلى وقود حيوي، مع مراقبة لحظية عبر لوحة تحكم سحابية.',
               'An integrated platform combining nano-sensors, AI, and bioconversion to transform oil spills into biofuel, with real-time monitoring via cloud dashboard.'
             )}
           </p>
