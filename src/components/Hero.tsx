@@ -7,7 +7,7 @@ const Hero = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden blob-container">
+    <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden blob-container pt-16">
       {/* Animated blobs */}
       <div className="blob blob-1" />
       <div className="blob blob-2" />
@@ -25,22 +25,25 @@ const Hero = () => {
             </span>
           </div>
 
-          {/* Main Title */}
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight tracking-tight">
-            <span className="gradient-text">
-              {t('نانوكلين', 'NanoClean')}
-            </span>
-            <br />
-            <span className="text-foreground">
-              {t(
-                'عوامة ذكية ترصد التسرب النفطي وتعالجه في مكانه',
-                'Smart Buoy Detects and Treats Oil Spills On-Site'
-              )}
-            </span>
-          </h1>
+          {/* Main Title with soft blob behind */}
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 blur-3xl -z-10" />
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight tracking-tight">
+              <span className="gradient-text font-extrabold">
+                {t('نانوكلين', 'NanoClean')}
+              </span>
+              <br />
+              <span className="text-foreground font-extrabold">
+                {t(
+                  'عوامة ذكية ترصد التسرب النفطي وتعالجه في مكانه',
+                  'Smart Buoy Detects and Treats Oil Spills On-Site'
+                )}
+              </span>
+            </h1>
+          </div>
 
-          {/* Subtitle */}
-          <p className="text-lg sm:text-xl text-foreground/80 max-w-2xl leading-loose">
+          {/* Subtitle with increased spacing */}
+          <p className="text-lg sm:text-xl text-foreground/80 max-w-2xl leading-loose pt-4">
             {t(
               'منصة متكاملة تجمع بين الحساسات النانوية والذكاء الاصطناعي والتحويل الحيوي لتحويل التسربات النفطية إلى وقود حيوي، مع مراقبة لحظية عبر لوحة تحكم سحابية.',
               'An integrated platform combining nano-sensors, AI, and bioconversion to transform oil spills into biofuel, with real-time monitoring via cloud dashboard.'
@@ -48,10 +51,10 @@ const Hero = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col gap-4 w-full sm:w-auto sm:flex-row justify-center lg:justify-start">
+          <div className="flex flex-col gap-4 w-full sm:w-auto sm:flex-row justify-center lg:justify-start pt-2">
             <Button
               size="lg"
-              className="gap-2 neon-glow bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all duration-300 text-primary-foreground font-semibold w-full sm:w-auto px-12 py-6 h-auto text-base lg:text-lg whitespace-nowrap"
+              className="gap-2 neon-glow shimmer bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all duration-300 text-primary-foreground font-semibold w-full sm:w-auto px-12 py-6 h-auto text-base lg:text-lg whitespace-nowrap"
             >
               <Presentation className="w-5 h-5" />
               {t('عرض النموذج الأولي (Prototype)', 'View Prototype')}
