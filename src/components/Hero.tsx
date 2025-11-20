@@ -42,7 +42,7 @@ const Hero = () => {
           {/* Subtitle */}
           <p className="text-lg sm:text-xl text-foreground/80 max-w-2xl leading-loose">
             {t(
-              'منصة متكاملة تجمع بين الحساسات النانوية والذكاء الاصطناعي والتحويل الحيوي لتحويل التسربات النفطية إلى وقود حيوي، مع مراقبة لحظية عبر لوحة تحكم سحابية.',
+              'منصة متكامل�� تجمع بين الحساسات النانوية والذكاء الاصطناعي والتحويل الحيوي لتحويل التسربات النفطية إلى وقود حيوي، مع مراقبة لحظية عبر لوحة تحكم سحابية.',
               'An integrated platform combining nano-sensors, AI, and bioconversion to transform oil spills into biofuel, with real-time monitoring via cloud dashboard.'
             )}
           </p>
@@ -56,14 +56,15 @@ const Hero = () => {
               <Presentation className="w-5 h-5" />
               {t('عرض النموذج الأولي (Prototype)', 'View Prototype')}
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="gap-2 glass-card border-border-glow/50 hover:border-primary hover:neon-glow transition-all duration-300 w-full sm:w-auto"
+            <a
+              href="https://nano-clean.netlify.app/info"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-lg glass-card border border-border-glow/50 hover:border-primary hover:neon-glow transition-all duration-300 text-foreground font-medium w-full sm:w-auto"
             >
               <FileText className="w-5 h-5" />
               {t('ملخص تنفيذي / Pitch Deck', 'Executive Summary / Pitch Deck')}
-            </Button>
+            </a>
           </div>
 
           {/* Small Note */}
