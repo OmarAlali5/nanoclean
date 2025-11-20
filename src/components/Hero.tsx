@@ -60,7 +60,7 @@ const Hero = () => {
               href="https://nano-clean.netlify.app/info"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-lg glass-card border border-border-glow/50 hover:border-primary hover:neon-glow transition-all duration-300 text-foreground font-medium w-full sm:w-auto"
+              className="inline-flex items-center justify-center gap-2 px-12 py-4 rounded-lg glass-card border border-border-glow/50 hover:border-primary hover:neon-glow transition-all duration-300 text-foreground font-medium w-full sm:w-auto whitespace-nowrap text-base lg:text-lg"
             >
               <FileText className="w-5 h-5" />
               {t('ملخص تنفيذي / Pitch Deck', 'Executive Summary / Pitch Deck')}
