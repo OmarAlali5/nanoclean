@@ -32,7 +32,7 @@ const Metrics = () => {
             return (
               <div
                 key={index}
-                className="glass-card p-5 rounded-xl border border-border-glow/20 hover:border-primary/30 transition-all duration-300"
+                className="glass-card backdrop-blur-lg p-5 rounded-2xl border border-primary/40 hover:border-primary/60 hover:bg-primary/5 transition-all duration-200"
               >
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary p-0.5 flex-shrink-0">
