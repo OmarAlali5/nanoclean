@@ -63,8 +63,8 @@ const Info = () => {
     <div className="min-h-screen bg-background">
       {/* Fixed Header */}
       <div className="fixed top-0 left-0 right-0 z-40 border-b border-border-glow/20 backdrop-blur-xl">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-          <a href="/" className="text-xl font-bold gradient-text">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+          <a href="/" className="text-lg font-bold gradient-text">
             {t('NanoClean', 'NanoClean')}
           </a>
           <div className="flex items-center gap-6">
@@ -76,6 +76,7 @@ const Info = () => {
             </a>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
       </div>
 
       {/* Main Content */}
@@ -86,7 +87,7 @@ const Info = () => {
           <div className="blob blob-2" style={{ opacity: 0.08 }} />
           
           <div className="max-w-4xl mx-auto text-center space-y-6 relative z-10">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight" style={{ fontSize: t('2.5rem', '2.75rem') }}>
               <span className="gradient-text">
                 {t('مركز المعلومات – NanoClean', 'NanoClean – Information Center')}
               </span>
@@ -94,7 +95,7 @@ const Info = () => {
             
             <div className="w-24 h-1 mx-auto bg-gradient-to-r from-primary via-secondary to-accent rounded-full" />
             
-            <p className="text-lg sm:text-xl text-foreground/80 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-foreground/80 leading-loose max-w-3xl mx-auto">
               {t(
                 'جميع المواد التعريفية الأساسية حول مشروع نانوكلين، تشمل الملخص التنفيذي، الأثر البيئي، التفاصيل التقنية، ونموذج الاهتمام للتعاون.',
                 'All essential materials about the NanoClean project including the executive summary, environmental impact, technical overview, and partnership interest form.'
@@ -116,7 +117,7 @@ const Info = () => {
                 return (
                   <div
                     key={section.id}
-                    className="group glass-card p-8 rounded-2xl border border-border-glow/40 hover:border-primary/50 hover:neon-glow transition-all duration-300 h-full flex flex-col"
+                    className="group glass-card backdrop-blur-lg p-8 rounded-2xl border border-border-glow/50 hover:border-primary/60 hover:neon-glow hover-lift transition-all duration-200 h-full flex flex-col shadow-lg hover:shadow-2xl"
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
                     {/* Icon */}
@@ -134,14 +135,14 @@ const Info = () => {
                       {title}
                     </h3>
                     
-                    <p className="text-foreground/70 leading-relaxed mb-6 flex-grow">
+                    <p className="text-foreground/70 leading-loose mb-6 flex-grow">
                       {description}
                     </p>
 
                     {/* Button */}
                     <Button 
                       asChild
-                      className={`w-full gap-2 bg-gradient-to-r ${section.gradient} hover:opacity-90 transition-all duration-300 text-primary-foreground font-semibold mt-auto`}
+                      className={`w-full gap-2 bg-gradient-to-r ${section.gradient} hover:opacity-90 transition-all duration-200 text-primary-foreground font-semibold mt-auto`}
                     >
                       <a href={section.link}>
                         {buttonText}
@@ -172,6 +173,9 @@ const Info = () => {
             >
               NanoClean.sa@outlook.com
             </a>
+            <p className="text-foreground/40 text-xs mt-6 opacity-40">
+              © 2025 NanoClean — {t('نموذج أولي للبحث والتطوير', 'Early R&D Prototype')}
+            </p>
           </div>
         </section>
       </main>
