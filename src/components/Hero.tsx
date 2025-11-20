@@ -51,7 +51,7 @@ const Hero = () => {
           <div className="flex flex-col gap-4 w-full sm:w-auto sm:flex-row justify-center lg:justify-start">
             <Button
               size="lg"
-              className="gap-2 neon-glow bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all duration-300 text-primary-foreground font-semibold w-full sm:w-auto"
+              className="gap-2 neon-glow bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all duration-300 text-primary-foreground font-semibold w-full sm:w-auto px-12 py-6 h-auto text-base lg:text-lg whitespace-nowrap"
             >
               <Presentation className="w-5 h-5" />
               {t('عرض النموذج الأولي (Prototype)', 'View Prototype')}
