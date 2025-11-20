@@ -51,11 +51,8 @@ const QRSection = () => {
           {/* QR Code */}
           <div className="flex justify-center lg:order-1 order-first">
             <div className="relative">
-              {/* Glowing ring behind QR */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/50 to-accent/50 blur-3xl -z-10 scale-110 glow-pulse" />
-
               {/* Scan badge */}
-              <div className="absolute -top-6 left-1/2 -translate-x-1/2 inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-accent/30 neon-glow">
+              <div className="absolute -top-6 left-1/2 -translate-x-1/2 inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-accent/30">
                 <QrCode className="w-4 h-4 text-accent" />
                 <span className="text-xs font-medium">
                   {t('امسح للاستكشاف', 'Scan to Explore')}
@@ -63,7 +60,7 @@ const QRSection = () => {
               </div>
 
               {/* QR Container */}
-              <div className="relative glass-card backdrop-blur-xl p-10 rounded-3xl neon-glow">
+              <div className="relative glass-card backdrop-blur-xl p-10 rounded-3xl">
                 <div className="w-80 h-80 bg-white rounded-2xl flex items-center justify-center shadow-2xl">
                   <div className="text-center space-y-2">
                     <img
