@@ -7,13 +7,14 @@ const Hero = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden blob-container">
+    <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden blob-container pt-16">
       {/* Animated blobs */}
       <div className="blob blob-1" />
       <div className="blob blob-2" />
       <div className="blob blob-3" />
+      <div className="absolute inset-0 bg-gradient-radial opacity-40 blur-3xl pointer-events-none" />
 
-      <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-center py-20">
+      <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center py-12 sm:py-16 lg:py-20">
         {/* Text Content */}
         <div className="text-center lg:text-start space-y-8 animate-fade-in">
           {/* Badge */}
@@ -24,22 +25,25 @@ const Hero = () => {
             </span>
           </div>
 
-          {/* Main Title */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-            <span className="gradient-text">
-              {t('نانوكلين', 'NanoClean')}
-            </span>
-            <br />
-            <span className="text-foreground">
-              {t(
-                'عوامة ذكية ترصد التسرب النفطي وتعالجه في مكانه',
-                'Smart Buoy Detects and Treats Oil Spills On-Site'
-              )}
-            </span>
-          </h1>
+          {/* Main Title with soft blob behind */}
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 blur-3xl -z-10" />
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight tracking-tight">
+              <span className="gradient-text font-extrabold">
+                {t('نانوكلين', 'NanoClean')}
+              </span>
+              <br />
+              <span className="text-foreground font-extrabold">
+                {t(
+                  'عوامة ذكية ترصد التسرب النفطي وتعالجه في مكانه',
+                  'Smart Buoy Detects and Treats Oil Spills On-Site'
+                )}
+              </span>
+            </h1>
+          </div>
 
-          {/* Subtitle */}
-          <p className="text-lg sm:text-xl text-foreground/80 max-w-2xl leading-relaxed">
+          {/* Subtitle with increased spacing */}
+          <p className="text-lg sm:text-xl text-foreground/80 max-w-2xl leading-loose pt-4">
             {t(
               'منصة متكاملة تجمع بين الحساسات النانوية والذكاء الاصطناعي والتحويل الحيوي لتحويل التسربات النفطية إلى وقود حيوي، مع مراقبة لحظية عبر لوحة تحكم سحابية.',
               'An integrated platform combining nano-sensors, AI, and bioconversion to transform oil spills into biofuel, with real-time monitoring via cloud dashboard.'
@@ -47,22 +51,23 @@ const Hero = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Button 
-              size="lg" 
-              className="gap-2 neon-glow bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all duration-300 text-primary-foreground font-semibold"
+          <div className="flex flex-col gap-4 w-full sm:w-auto sm:flex-row justify-center lg:justify-start pt-2">
+            <Button
+              size="lg"
+              className="gap-2 bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all duration-300 text-primary-foreground font-semibold w-full sm:w-auto px-12 py-6 h-auto text-base lg:text-lg whitespace-nowrap"
             >
               <Presentation className="w-5 h-5" />
               {t('عرض النموذج الأولي (Prototype)', 'View Prototype')}
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="gap-2 glass-card border-border-glow/50 hover:border-primary hover:neon-glow transition-all duration-300"
+            <a
+              href="https://nano-clean.netlify.app/info"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-12 py-4 rounded-lg glass-card border border-border-glow/50 hover:border-primary hover:neon-glow transition-all duration-300 text-foreground font-medium w-full sm:w-auto whitespace-nowrap text-base lg:text-lg"
             >
               <FileText className="w-5 h-5" />
               {t('ملخص تنفيذي / Pitch Deck', 'Executive Summary / Pitch Deck')}
-            </Button>
+            </a>
           </div>
 
           {/* Small Note */}

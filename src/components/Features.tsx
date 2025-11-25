@@ -37,11 +37,11 @@ const Features = () => {
   ];
 
   return (
-    <section ref={ref} className="relative py-24 px-4 sm:px-6 lg:px-8">
+    <section ref={ref} className="relative py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
       <div className={`max-w-7xl mx-auto scroll-animate ${isVisible ? 'visible' : ''}`}>
         {/* Section Header */}
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
+        <div className="text-center mb-12 sm:mb-16 space-y-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
             <span className="gradient-text">
               {t('المميزات الرئيسية', 'Key Features')}
             </span>
@@ -50,35 +50,24 @@ const Features = () => {
         </div>
 
         {/* Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
               <div
                 key={index}
-                className="group glass-card p-8 rounded-2xl hover:neon-glow transition-all duration-500 hover:scale-105 animate-fade-in"
+                className="glass-card backdrop-blur-xl bg-card/30 p-8 rounded-2xl border border-border-glow/30 hover:border-primary/50 hover:neon-glow hover-lift transition-all duration-200 flex flex-col h-full"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
-                {/* Icon Container */}
-                <div className="relative mb-6">
-                  <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-20 blur-xl group-hover:opacity-40 transition-opacity duration-500`} />
-                  <div className={`relative w-16 h-16 rounded-2xl bg-gradient-to-br ${feature.gradient} p-0.5`}>
-                    <div className="w-full h-full bg-background-secondary rounded-2xl flex items-center justify-center">
-                      <Icon className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300" />
-                    </div>
-                  </div>
+                <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center mb-6">
+                  <Icon className="w-9 h-9 text-primary" />
                 </div>
-
-                {/* Content */}
-                <h3 className="text-xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-xl font-bold mb-3 text-foreground">
                   {feature.title}
                 </h3>
-                <p className="text-foreground/70 leading-relaxed">
+                <p className="text-foreground/70 leading-relaxed flex-grow">
                   {feature.description}
                 </p>
-
-                {/* Bottom Accent Line */}
-                <div className={`mt-6 h-1 w-0 group-hover:w-full bg-gradient-to-r ${feature.gradient} rounded-full transition-all duration-500`} />
               </div>
             );
           })}
