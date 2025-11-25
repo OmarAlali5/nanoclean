@@ -1,5 +1,7 @@
 import LanguageToggle from '@/components/LanguageToggle';
 import LogoHeader from '@/components/LogoHeader';
+import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { ExternalLink } from 'lucide-react';
@@ -103,6 +105,12 @@ const Index = () => {
 
         </div>
       </main>
+
+      {/* Contact Section */}
+      <Contact />
+      
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
