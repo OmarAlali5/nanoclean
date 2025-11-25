@@ -38,7 +38,7 @@ const Index = () => {
           <p className="text-lg sm:text-xl text-foreground/80 leading-relaxed max-w-2xl mx-auto">
             {t(
               'تقنية مبتكرة تعتمد على الذكاء الاصطناعي وتقنية النانو لمراقبة وتنبيه ومعالجة التسربات النفطية بشكل سريع وفعّال.',
-              'Innovative AI-powered technology for monitoring, alerting, and treating oil spills quickly and effectively.'
+              'An innovative technology that uses artificial intelligence and nanotechnology to monitor, alert to, and treat oil leaks quickly and effectively.'
             )}
           </p>
 
