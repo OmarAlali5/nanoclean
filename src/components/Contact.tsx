@@ -15,7 +15,7 @@ const Contact = () => {
     },
     {
       label: t('عبدالله مهراب', 'Abdullah Mohrab'),
-      email: 'example2@nanoclean.sa',
+      email: 'abadymd77@gmail.com',
       phone: '0540705086',
       linkedinUrl: 'https://www.linkedin.com/in/abdallah-mohrab-63462834a',
     },
