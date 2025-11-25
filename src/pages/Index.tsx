@@ -80,7 +80,23 @@ const Index = () => {
           </div>
 
           {/* QR Code Section */}
-          <div className="pt-12">
+          <div className="pt-12 space-y-8">
+            {/* QR Headline */}
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
+              {t('امسح الـ QR لتسجيل اهتمامك بالتعاون مع نانوكلين', 'Scan the QR to Register Your Interest in Collaborating with NanoClean')}
+            </h2>
+
+            {/* QR Description */}
+            <p className="text-base sm:text-lg text-foreground/70 leading-relaxed max-w-2xl mx-auto">
+              {t(
+                'نموذج مخصص للجهات والأفراد الراغبين في التعاون، الشراكة، أو الحصول على معلومات إضافية عن مشروع نانوكلين.',
+                'A dedicated form for entities and individuals interested in collaboration, partnership, or obtaining additional information about the NanoClean project.'
+              )}
+            </p>
+
+            {/* Glowing horizontal line */}
+            <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto opacity-60" />
+
             <div className="relative group inline-block">
               {/* Glowing ring behind QR */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-accent/30 to-primary/40 blur-3xl opacity-40 group-hover:opacity-60 transition-opacity duration-500 scale-110" />
