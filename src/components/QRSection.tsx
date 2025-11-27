@@ -68,7 +68,7 @@ const QRSection = () => {
               <div className="relative glass-card backdrop-blur-xl p-8 sm:p-12 rounded-[40px] border-2 border-primary/30 shadow-2xl group-hover:scale-[1.03] transition-transform duration-300">
                 <div className="w-64 sm:w-80 h-64 sm:h-80 bg-white rounded-3xl flex items-center justify-center shadow-[0_0_50px_rgba(20,241,200,0.2)]">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fff6463be05f5414390b1cc7ab38298c4%2F418b62091026403eb002ad1e735a4f1d?format=webp"
+                    src={new URL('../assets/NanoClean Booth QR Code.png', import.meta.url).href}
                     alt="NanoClean Interest Form QR Code"
                     className="w-full h-full object-cover rounded-3xl p-4"
                   />
