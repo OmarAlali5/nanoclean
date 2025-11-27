@@ -21,19 +21,19 @@ const Contact = () => {
     },
     {
       label: t('عبدالله محمد', 'Abdullah Mohammed'),
-      email: 'example3@nanoclean.sa',
+      email: 'abdullah.mohammedsa2005@gmail.com',
       phone: '0501714085',
       linkedinUrl: 'https://www.linkedin.com/in/abdullahmohammedsaifali',
     },
     {
       label: t('شيماء الزهراني', 'Shaymaa Alzahrani'),
-      email: 'example4@nanoclean.sa',
+      email: 'shaymaabdullah29@gmail.com',
       phone: '0532388066',
       linkedinUrl: 'https://www.linkedin.com/in/shaymaaalzahrani',
     },
     {
       label: t('نهال النونو', 'Nihal Alnounou'),
-      email: 'example5@nanoclean.sa',
+      email: 'nehal1nono1@gmail.com',
       phone: '0554461036',
       linkedinUrl: 'https://www.linkedin.com/in/nihalt',
     },
